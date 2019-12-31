@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "amd": true,
+        "node": true
     },
     "extends": "eslint:recommended",
     "globals": {
@@ -20,6 +21,11 @@ module.exports = {
     ],
     "rules": {
         "indent": 2,
-        "no-unused-vars": 0
+        "no-unused-vars": 0,
+        "object-curly-spacing": [2, "always"],
+        "space-before-blocks": 2,
+        "space-before-function-paren": [2, "never"],
+        "keyword-spacing": 2,
+        "semi": 2
     }
 };
