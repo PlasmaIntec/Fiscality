@@ -27,6 +27,7 @@ module.exports = {
         "space-before-blocks": 2,
         "space-before-function-paren": [2, "never"],
         "keyword-spacing": 2,
-        "semi": 2
+        "semi": 2,
+        "quotes": 2
     }
 };

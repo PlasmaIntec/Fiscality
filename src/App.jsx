@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { hot } from "react-hot-loader";
 import MoneyChart from "./MoneyChart.jsx";
 import Chart from "chart.js";
+import getResults from "./scraper.js";
 import "./App.css";
 
 class App extends Component {
@@ -11,6 +11,7 @@ class App extends Component {
         this.deleteButtonClick = this.deleteButtonClick.bind(this);
         this.addData = this.addData.bind(this);
         this.removeData = this.removeData.bind(this);
+        console.log(getResults());
     }
 
     componentDidMount() {
@@ -71,4 +72,4 @@ class App extends Component {
     }
 }
 
-export default hot(module)(App);
+export default App;

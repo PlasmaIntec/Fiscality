@@ -1,3 +1,10 @@
 {
-	"presets": ["@babel/env", "@babel/preset-react"]
-  }
+	"presets": ["@babel/env", "@babel/preset-react"],
+	// to use async keyword
+	// https://stackoverflow.com/a/53736090
+	"plugins": [
+		["@babel/transform-runtime", {
+			"regenerator": true
+		}]
+	]
+}
