@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import { hot } from "react-hot-loader";
 import MoneyChart from "./MoneyChart.jsx";
 import Chart from "chart.js";
@@ -14,8 +14,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        var canvas = this.canvas;
-        var myChart = new Chart(canvas, {
+        var myChart = new Chart(this.canvas, {
             type: "bar",
             data: {
                 labels: ["Red", "Blue", "Yellow"],
@@ -32,8 +31,6 @@ class App extends Component {
                 ]
             }
         });
-
-        window.myChart = myChart;
         this.myChart = myChart;
     }
 
