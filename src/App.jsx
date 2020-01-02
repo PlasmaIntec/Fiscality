@@ -59,8 +59,8 @@ class App extends Component {
 
         getResults()
             .then(rawData => {
-                var data = rawData.map(record => [moment(record[0]), parseFloat(record[7].match(/\$(.*)/)[1].replace(/,/g, ''))]); // time and balance
-                console.log(data) // REMOVE
+                var data = rawData.map(record => [moment(record[0]), parseFloat(record[7].match(/\$(.*)/)[1].replace(/,/g, ""))]); // time and balance
+                console.log(data); // REMOVE
                 this.updateData(this.myChart, data);
             });
     }
