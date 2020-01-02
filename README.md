@@ -14,3 +14,4 @@ npm start
 * Search by categories
 * Improve scraper robustness
 * Extend scraper data range
+* Add persistent database
