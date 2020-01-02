@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode development",
-    "start": "nodemon server.js",
+    "watch": "webpack --watch --mode development",
+    "start": "nodemon server/server.js",
     "lint": "eslint --fix --ext .jsx --ext .js ."
   },
   "keywords": [],
@@ -33,6 +34,7 @@
     "chart.js": "^2.9.3",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "puppeteer": "^2.0.0",
     "react": "^16.12.0",

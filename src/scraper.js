@@ -1,9 +1,12 @@
 const getResults = () => {
-    fetch("/scrape", { 
+    return fetch("/scrape", { 
         method: "GET"
     })
         .then(res => res.json())
-        .then(json => console.log(json));
+        .then(json => {
+            window.json = json.data; // REMOVE
+            return json.data; 
+        });
 };
 
 export default getResults;
